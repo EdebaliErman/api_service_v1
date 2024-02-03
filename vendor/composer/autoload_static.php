@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
+class ComposerStaticInit159a9790cace5508091778a582f262a3
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -14,6 +14,7 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -26,18 +27,22 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
             'Symfony\\Polyfill\\Intl\\Grapheme\\' => 31,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Service\\' => 26,
+            'Symfony\\Contracts\\Cache\\' => 24,
+            'Symfony\\Component\\VarExporter\\' => 30,
             'Symfony\\Component\\String\\' => 25,
             'Symfony\\Component\\Console\\' => 26,
-        ),
-        'R' => 
-        array (
-            'Renamesoft\\ApiServiceV1\\' => 24,
+            'Symfony\\Component\\Cache\\' => 24,
         ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
+        ),
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+            'FastRoute\\' => 10,
         ),
         'D' => 
         array (
@@ -50,7 +55,12 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -83,6 +93,14 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
+        'Symfony\\Contracts\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/cache-contracts',
+        ),
+        'Symfony\\Component\\VarExporter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-exporter',
+        ),
         'Symfony\\Component\\String\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
@@ -91,9 +109,9 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Renamesoft\\ApiServiceV1\\' => 
+        'Symfony\\Component\\Cache\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/..' . '/symfony/cache',
         ),
         'Psr\\Log\\' => 
         array (
@@ -106,6 +124,14 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
+        'FastRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
         'Doctrine\\Persistence\\' => 
         array (
@@ -143,10 +169,18 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
         array (
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
         ),
+        'Doctrine\\Common\\Annotations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/common/src',
             1 => __DIR__ . '/..' . '/doctrine/event-manager/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 
@@ -158,14 +192,15 @@ class ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
+        '©' => __DIR__ . '/..' . '/symfony/cache/Traits/ValueWrapper.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit3ba5865ee439cf319452b0df1a1dfb7c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit159a9790cace5508091778a582f262a3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit159a9790cace5508091778a582f262a3::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit159a9790cace5508091778a582f262a3::$classMap;
 
         }, null, ClassLoader::class);
     }
